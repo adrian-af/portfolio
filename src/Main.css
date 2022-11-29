@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Raleway:wght@300&display=swap');
+@font-face {
+    font-family: 'Doctor Glitch';
+    src: url('./Doctor\ Glitch.otf');
+}
+body
+{
+    font-family: 'Play', sans-serif;
+}
+
+#botonizq
+{
+    color: white;
+}
+
+#navbar
+{
+    background-color: rgb(44, 44, 88);
+    
+    opacity: 0;
+}
+
+#nombre
+{
+    color: rgb(224, 28, 162);
+    font-size: 3rem;
+    text-shadow:    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 4px rgb(0, 162, 255);
+}
+
+body
+{
+    background: rgb(238,174,202);
+    background: linear-gradient(24deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+}
+
+p
+{
+    width: 70%;
+    line-height: 2em;
+    margin: auto;
+}
+
+h2
+{
+    text-shadow:    0 0 7px #fff,
+                    0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 4px rgb(0, 162, 255);
+    font-weight: bold;
+    font-family: 'Doctor Glitch';
+    user-select: none; 
+}
+
+.card
+{
+    width: 90%;
+    height: 4rem;
+    margin: auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 1rem;
+
+}
+
+.movil 
+{
+    display: none;
+}
+
+.bigger
+{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.normal
+{
+    font-size: 1.5rem;
+}
+
+#contacto
+{
+    display: flex;
+    flex-direction: column;
+}
+#contacto > *
+{
+    background-color: white;
+    border-radius: 0.25rem;
+    width: 90%;
+    margin-top: .5rem;
+}
+h3
+{
+    text-transform: uppercase;
+}
+
+.logos
+{
+    
+    height: 4rem;
+    overflow: hidden;
+}
+#divLogos
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#aboutCard
+{
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    text-align: left;
+    padding-bottom: 2rem;
+}
+h1
+{
+    margin-top:1rem;
+    text-align: center;
+}
+ul
+{
+    list-style: none;
+    margin: auto;
+    width: 80%;
+}
+
+.icons
+{
+    width: 2rem;
+}
+
+li
+{
+    margin: 1rem;
+    display: flex;
+    justify-content:stretch;
+    gap: 2rem;
+}
+
+#divWork
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: left;
+}
+
+#divContact
+{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#contacts
+{
+    justify-content: left;
+    margin: 1rem auto ;
+    display: flex;
+    flex-direction: row;
+}
+
+#contacts > *
+{
+    margin: 1rem;
+}
+
+.proyectos
+{
+    width: 20rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+#proyecto
+{
+    justify-content: left;
+}
+
+#proyectos
+{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0 1rem;
+}
+
+.proyectosDiv > *
+{
+    height: 10rem;
+}
+
+#lista
+{
+    background-size: cover;
+    background-color: rgb(243, 198, 17);
+    backdrop-filter: blur(1px);
+    position: relative;
+    font-size: 2rem;
+    line-height: normal;
+    padding-top: 2rem;
+    cursor: pointer;
+}
+
+#textoLista
+{
+    transition: all 1s;
+}
+
+#tituloLista
+{
+    cursor: pointer;
+}
+
+#foro
+{
+    background-size: cover;
+    background-color: rgb(211, 57, 183);
+    backdrop-filter: blur(1px);
+    position: relative;
+    font-size: 2rem;
+    line-height: normal;
+    padding-top: 2rem;
+    cursor: pointer;
+    
+}
+
+#fondoModalMenu
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+#modalMenu
+{
+    display: block;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2rem 1.5rem;
+    text-align: right;
+}
+#close
+{
+    margin: .5rem .7rem;
+}
+#pags
+{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+/*versión desktop */
+@media only screen and(min-width: 850px)
+{
+    .desktop
+    {
+        display: block;
+    }
+    .movil
+    {
+        display: none;
+        text-align: left;
+    }
+    #hamburger
+    {
+        margin: .5rem .7rem;
+    }
+
+}
+/*versión móvil */
+@media only screen and (max-width: 850px) 
+{
+    .desktop
+    {
+        display: none;
+    }
+    .movil
+    {
+        display: block;
+        text-align: left;
+    }
+    #hamburger
+    {
+        margin: .5rem .7rem;
+    }
+    #proyectos
+    {
+        display: block;
+    }
+}
