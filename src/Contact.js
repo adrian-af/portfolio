@@ -11,13 +11,13 @@ export const Contact = () =>
         <h1>Contacto</h1>
         <div id='contacts'>
             <div>
-                <img src={outlook} className='icons'></img>adrian.afo@hotmail.com
+                <img src={outlook} className='icons'></img><a href="mailto:adrian.afo@hotmail.com">adrian.afo@hotmail.com</a>
             </div>
             <div>
-                <img src={github} className='icons'></img>github.com/adrian-af
+                <img src={github} className='icons'></img><a href="http://github.com/adrian-af" target='_blank'>github.com/adrian-af</a>
             </div>
             <div>
-                <img src={linkedin} className='icons'></img>linkedin.com/in/adrian-afo
+                <img src={linkedin} className='icons'></img><a href="http://linkedin.com/in/adrian-afo" target='_blank'>linkedin.com/in/adrian-afo</a>
             </div>
         </div>
     
